@@ -33,6 +33,7 @@ public class ConfigManager {
     public static void setupConfig(Challenges main) {
         ConfigManager.config = main.getConfig();
         main.saveDefaultConfig();
+        main.getConfig().options().copyDefaults(true);
         initiateVariables();
     }
 
