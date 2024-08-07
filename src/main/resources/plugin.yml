@@ -1,0 +1,13 @@
+name: Challenges
+version: '1'
+main: me.xiaojibazhanshi.challenges.Challenges
+api-version: '1.21'
+authors: [ XiaoJibaZhanshi ]
+description: Challenges, yay
+commands:
+  challenge:
+    description: Challenges, yay
+    usage: /challenge <challenge/reload>
+  complete:
+    description: Complete the challenge!
+    usage: /complete

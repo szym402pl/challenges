@@ -1,0 +1,43 @@
+# Made by XiaoJibaZhanshi
+
+# Damage per second on challenge end (in hearts)
+dps-on-challenge-end: 1.0
+damage-duration-in-seconds: 30
+title-on-challenge-status-change: true
+
+# /complete doesn't need any permission by the way
+challenge-command-permission: "your-server.admin.challenge"
+
+# Available placeholders: {prefix}, {challenge-description}
+messages:
+  chat-prefix: "&7[&aChallenges&7] "
+  challenge-start-format: "{prefix} &aChallenge {challenge-description} &ahas begun!"
+  challenge-complete-format: "{prefix} &aChallenge {challenge-description} &ahas been completed!"
+  challenge-failed-format: "{prefix} &4Players have failed to {challenge-description}&4! \n&cYou will now start taking damage!"
+
+# You can add as many as you want
+challenge-list:
+  catch-lightning:
+    time-to-complete-in-seconds: 300
+    description: "&cGet struck by lightning"
+  lava-dive:
+    time-to-complete-in-seconds: 600
+    description: "&cDive into lava and don't die"
+  tame-an-animal:
+    time-to-complete-in-seconds: 1800
+    description: "&cTame a wild animal"
+  reach-level-20:
+    time-to-complete-in-seconds: 600
+    description: "&cReach level 20"
+  half-heart:
+    time-to-complete-in-seconds: 60
+    description: "&cGet your hearts down to 0.5"
+  mine-fifty-blocks:
+    time-to-complete-in-seconds: 120
+    description: "&cMine 50 blocks"
+  burn-inventory:
+    time-to-complete-in-seconds: 120
+    description: "&cBurn your entire inventory"
+  fill-inventory:
+    time-to-complete-in-seconds: 300
+    description: "&cFill your entire inventory"
