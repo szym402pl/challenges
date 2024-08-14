@@ -7,6 +7,7 @@ title-on-challenge-status-change: true
 
 # /complete doesn't need any permission by the way
 challenge-command-permission: "your-server.admin.challenge"
+complete-command-permission: "your-server.admin.complete"
 
 # Available placeholders: {prefix}, {challenge-description}
 messages:

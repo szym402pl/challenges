@@ -25,6 +25,11 @@ public class CompleteCommand implements CommandExecutor {
             return true;
         }
 
+        if (!(player.hasPermission(ConfigManager.getCompleteCmdPermission()))) {
+            player.sendMessage(net.md_5.bungee.api.ChatColor.RED + "No permission!");
+            return true;
+        }
+
         if (ConfigManager.activeChallenge == null) {
             sender.sendMessage(ChatColor.RED + "There are no active challenges!");
             return true;

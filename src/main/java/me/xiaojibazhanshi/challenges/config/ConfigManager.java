@@ -19,6 +19,7 @@ public class ConfigManager {
 
     @Getter private static double dpsOnChallengeEnd;
     @Getter private static String challengeCmdPermission;
+    @Getter private static String completeCmdPermission;
     @Getter private static boolean titleOnStatusChange;
     @Getter private static int damageDuration;
 
@@ -48,6 +49,9 @@ public class ConfigManager {
 
         damageDuration = (int) Utils.nullCheck("damage-duration-in-seconds",
                 config.getInt("damage-duration-in-seconds"));
+
+        completeCmdPermission = (String) Utils.nullCheck("complete-command-permission",
+                config.getString("complete-command-permission"));
 
         challengeCmdPermission = (String) Utils.nullCheck("challenge-command-permission",
                 config.getString("challenge-command-permission"));
